@@ -59,7 +59,7 @@ body {
     }
 
     .main-title {
-        h2{
+        h2 {
             font-size: 24px;
             line-height: 30px;
             color: $colorYellow;
@@ -94,31 +94,36 @@ body {
             }
         }
     }
-    .About{
-        h3{
+
+    .About {
+        h3 {
             font-size: 40px;
             line-height: 57px;
             font-weight: 700;
             color: $colorRed;
             margin-bottom: 45px;
         }
-        p{
+
+        p {
             font-size: 18px;
             color: $colorBlack;
             line-height: 26px;
         }
-        .card{
+
+        .card {
             position: relative;
             width: 150px;
             height: 185px;
             margin-top: 220px;
-            &::before{
+
+            &::before {
                 border: 3px solid #F68E28;
                 content: "";
                 width: 150px;
                 height: 185px;
             }
-            .desc{
+
+            .desc {
                 display: flex;
                 align-items: center;
                 position: absolute;
@@ -127,14 +132,16 @@ body {
                 right: -10%;
                 background: $colorOq;
                 padding: 10px 0;
-                span{
+
+                span {
                     color: $colorRed;
                     font-size: 70px;
                     line-height: 75px;
                     font-weight: 700;
                     padding-right: 15px;
                 }
-                p{
+
+                p {
                     font-size: 17px;
                     line-height: 20px;
                 }

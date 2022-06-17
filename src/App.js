@@ -1,19 +1,12 @@
-import React from 'react'
-import About from './components/About'
-import Header from './components/Header'
-import Katalog from './components/Katalog'
-import Navbar from './components/Navbar'
-
+import React from "react";
+import Main from "./pages/Main";
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Header/>
-      <About/>
-      <Katalog/>
+      <Main />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
