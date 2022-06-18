@@ -17,21 +17,21 @@ const Navbar = () => {
                                 <a href="/"><img className='w-100' src="./img/logo.png" alt="" /></a>
                             </div>
                         </div>
-                        <div className="col-5">
+                        <div className="col-8 d-flex align-items-center justify-content-between">
                             <ul className="nav-menu">
-                                <li><a href="">{getText("about")}</a></li>
-                                <li><a href="">{getText("products")}</a></li>
-                                <li><a href="">{getText("contacts")}</a></li>
-                                <li><a href="">{getText("portfolio")}</a></li>
+                                <li className='me-5'><a href="/">{getText("about")}</a></li>
+                                <li className='me-5'><a href="/">{getText("products")}</a></li>
+                                <li className='me-5'><a href="/">{getText("contacts")}</a></li>
+                                <li className='me-5'><a href="/">{getText("portfolio")}</a></li>
                             </ul>
-                        </div>
-                        <div className="col-1">
+
                             <div className="language">
                                 <select className='siteLang' onChange={changeLanguage}>
                                     <option value="ru" selected={getLanguage() === "ru"} >Ру</option>
                                     <option value="uz" selected={getLanguage() === "uz"} >Uz</option>
                                 </select>
                             </div>
+
                         </div>
                     </div>
                 </div>

@@ -1,12 +1,12 @@
+$colorBlack: #000000;
+$colorRed: #AA240A;
+$colorYellow: #F68E28;
+$colorOq: #fff;
+
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700;900&display=swap');
 
 body {
     font-family: 'Gothic A1', sans-serif;
-
-    $colorBlack: #000000;
-    $colorRed: #AA240A;
-    $colorYellow: #F68E28;
-    $colorOq: #fff;
 
     h1,
     h2,
@@ -96,6 +96,15 @@ body {
     }
 
     .About {
+        padding: 60px 0 90px;
+        position: relative;
+
+        .key1 {
+            position: absolute;
+            top: 100px;
+            left: 30px;
+        }
+        
         h3 {
             font-size: 40px;
             line-height: 57px;
