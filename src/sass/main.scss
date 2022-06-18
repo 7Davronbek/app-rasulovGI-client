@@ -5,8 +5,13 @@ $colorOq: #fff;
 
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700;900&display=swap');
 
+#root {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Gothic A1', sans-serif;
+    overflow-x: hidden;
 
     h1,
     h2,
@@ -104,7 +109,14 @@ body {
             top: 100px;
             left: 30px;
         }
-        
+
+        .key2 {
+            position: absolute;
+            right: 20px;
+            top: 360px;
+            z-index: -1;
+        }
+
         h3 {
             font-size: 40px;
             line-height: 57px;
@@ -156,5 +168,9 @@ body {
                 }
             }
         }
+    }
+
+    .Katalog {
+        padding: 30px 0 90px;
     }
 }
