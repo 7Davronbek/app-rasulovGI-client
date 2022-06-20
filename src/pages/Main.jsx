@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Katalog from '../components/Katalog'
 import Navbar from '../components/Navbar'
 import Number from '../components/Number'
+import YouTube from '../components/YouTube'
 
 const Main = () => {
     return (
@@ -13,6 +14,7 @@ const Main = () => {
             <About />
             <Katalog />
             <Number />
+            <YouTube />
         </>
     )
 }
