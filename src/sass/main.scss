@@ -324,8 +324,26 @@ body {
     .footer {
         background-image: url(../images/footer.png);
         background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
         padding: 160px 0 100px;
         position: relative;
+        background-size: cover;
+
+        .myRow {
+            margin: 90px 0 60px;
+        }
+
+        .socials {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                margin-right: 25px;
+            }
+        }
 
         .cards {
             display: flex;
