@@ -176,6 +176,10 @@ body .Katalog {
   padding: 30px 0 90px;
 }
 
+body .Number {
+  padding: 40px 0 60px;
+}
+
 body .Number h4 {
   color: #AA240A;
 }
