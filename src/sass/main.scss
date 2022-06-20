@@ -321,5 +321,46 @@ body {
         }
     }
 
+    .footer {
+        background-image: url(../images/footer.png);
+        background-repeat: no-repeat;
+        padding: 160px 0 100px;
+        position: relative;
 
+        .cards {
+            display: flex;
+            align-items: center;
+
+            a {
+                display: block;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 21px;
+                color: #FFFFFF;
+                margin-top: 5px;
+                padding-left: 12px;
+            }
+        }
+
+        h1 {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 50px;
+            color: $colorYellow;
+            text-align: center;
+        }
+
+        .zed {
+            z-index: 99;
+        }
+
+        .blur {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.73);
+        }
+    }
 }
