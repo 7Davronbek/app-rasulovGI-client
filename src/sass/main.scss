@@ -183,9 +183,31 @@ body {
             }
         }
 
+        .swiper {
+            padding: 10px 0 50px;
+
+            .swiper-pagination  {
+                bottom: 0;
+            }
+
+            .swiper-pagination-bullet  {
+                width: 15px;
+                height: 15px;
+                border-radius: 0;
+                background-color: #FBD2A9;
+                opacity: 1;
+                margin-right: 15px;
+
+                &.swiper-pagination-bullet-active {
+                    background-color: $colorYellow;
+                }
+            }
+        }
+
         .cards {
             height: 580px;
             position: relative;
+            overflow: hidden;
 
             img {
                 width: 100%;
@@ -206,7 +228,7 @@ body {
 
             p {
                 font-size: 17px;
-                line-height: 21px;
+                line-height: 25px;
                 color: #fff;
                 font-weight: 300;
                 position: absolute;
@@ -280,11 +302,11 @@ body {
         padding: 40px 0 60px;
 
         h4 {
-            color: #AA240A;
+            color: $colorRed;
         }
 
         h2 {
-            color: #F68E28;
+            color: $colorYellow;
         }
 
         // .num1 {}
