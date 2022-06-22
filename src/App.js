@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Main />
+        <Main />
       <Footer />
     </>
   );

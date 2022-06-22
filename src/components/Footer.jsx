@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
 
                     <div className="col-3 zed ">
-                        <div className="cards justify-content-end">
+                        <div className="cards justify-content-center">
                             <div><img src="/icon/world.svg" alt="" /></div>
                             <div>
                                 <a href="tel: +998943698058">www.website.uz</a>
