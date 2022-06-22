@@ -1,6 +1,6 @@
 export const ru = {
-    about: "О нас",
-    products: "Продукты",
+    about: "Главная",
+    products: "Каталог",
     contacts: "Контакты",
     portfolio: "Работы",
 

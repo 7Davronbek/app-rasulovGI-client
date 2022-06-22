@@ -1,6 +1,6 @@
 export const uz = {
-    about: "Biz haqimizda",
-    products: "Mahsulotlar",
+    about: "Asosiy",
+    products: "Katalog",
     contacts: "Aloqa",
     portfolio: "Ishlar",
 }
