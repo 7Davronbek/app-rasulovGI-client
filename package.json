@@ -9,6 +9,7 @@
     "bootstrap": "^5.1.3",
     "node-sass": "^7.0.1",
     "react": "^18.2.0",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "skitter-slider": "^5.1.4",
