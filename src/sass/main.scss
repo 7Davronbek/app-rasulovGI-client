@@ -74,6 +74,7 @@ body {
 
     .Navbar {
         padding: 20px 0;
+        user-select: none;
 
         .nav-menu {
             display: flex;
