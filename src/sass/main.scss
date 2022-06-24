@@ -542,4 +542,28 @@ body {
             line-height: 80px;
         }
     }
+
+    .CatalogContent {
+        padding: 80px 0;
+
+        a {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 90.5%;
+            color: #292929;
+            display: block;
+            margin-bottom: 24px;
+        }
+
+        .searchWrap {
+            border-bottom: 1px solid #F68E28;
+            padding-bottom: 8px;
+            margin-bottom: 40px;
+
+            input {
+                border: 0;
+                box-shadow: none;
+            }
+        }
+    }
 }
