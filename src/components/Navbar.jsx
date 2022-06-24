@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { getLanguage, getText } from '../locales/index'
 import { LANGUAGE } from '../tools/constants';
 
@@ -20,7 +21,7 @@ const Navbar = () => {
                         <div className="col-8 d-flex align-items-center justify-content-between">
                             <ul className="nav-menu">
                                 <li className='me-5'><a href="/">{getText("about")}</a></li>
-                                <li className='me-5'><a href="/">{getText("products")}</a></li>
+                                <li className='me-5'><Link to="/catalog">{getText("products")}</Link></li>
                                 <li className='me-5'><a href="/">{getText("contacts")}</a></li>
                                 <li className='me-5'><a href="/">{getText("portfolio")}</a></li>
                             </ul>

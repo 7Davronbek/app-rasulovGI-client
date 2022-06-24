@@ -512,4 +512,15 @@ body {
             background-color: rgba(0, 0, 0, 0.73);
         }
     }
+
+    .CatalogHeader {
+        background-image: url(../images/catalogBg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 516px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }

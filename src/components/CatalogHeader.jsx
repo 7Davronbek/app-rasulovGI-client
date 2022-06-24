@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const CatalogHeader = () => {
     return (
         <>
-            <div className="catalogHeader">
+            <div className="CatalogHeader">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
