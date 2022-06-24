@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Main from "./pages/Main";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Catalog from "./pages/Catalog";
+import CatalogByIds from "./pages/CatalogByIds";
 
 const App = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/catalog" element={<Catalog />} />
+          <Route path="/catalog/by-id" element={<CatalogByIds />} />
         </Routes>
 
         <Footer />

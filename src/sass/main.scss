@@ -543,8 +543,43 @@ body {
         }
     }
 
-    .CatalogContent {
+    .CatalogContent,
+    .CatalogById {
         padding: 80px 0;
+        position: relative;
+
+        .key1,
+        .key2,
+        .key3,
+        .key4 {
+            position: absolute;
+        }
+
+        .key1 {
+            top: 40px;
+            left: -100px;
+        }
+
+        .key2 {
+            top: 30%;
+            right: -140px;
+        }
+
+        .key3 {
+            bottom: 10%;
+            right: -100px;
+        }
+
+        .key4 {
+            bottom: 30%;
+            left: 100px;
+        }
+
+        .col-lg-6 {
+            &.actives {
+                margin-top: 60px;
+            }
+        }
 
         .cards {
             height: 580px;
@@ -646,6 +681,11 @@ body {
             color: #292929;
             display: block;
             margin-bottom: 24px;
+            transition: all .3s ease;
+
+            &:hover {
+                color: #AA240A;
+            }
         }
 
         .searchWrap {

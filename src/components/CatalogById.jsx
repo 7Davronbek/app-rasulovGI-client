@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const CatalogContent = () => {
+const CatalogById = () => {
     return (
         <>
-            <div className="CatalogContent">
+            <div className="CatalogById">
                 <div className="container position-relative">
                     <div className="key1"><img src="/img/key1.png" alt="" /></div>
                     <div className="key2"><img src="/img/key2.png" alt="" /></div>
@@ -71,4 +71,4 @@ const CatalogContent = () => {
     )
 }
 
-export default CatalogContent
+export default CatalogById
