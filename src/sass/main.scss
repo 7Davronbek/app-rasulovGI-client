@@ -60,7 +60,7 @@ body {
             top: 19%;
         }
 
-        .swiper-pagination  {
+        .swiper-pagination {
             background-color: transparent;
             display: flex;
             width: 192px;
@@ -522,5 +522,24 @@ body {
         align-items: center;
         justify-content: center;
         text-align: center;
+
+        a,
+        span {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 30px;
+            color: #fff;
+
+            &.actives {
+                color: #F68E28;
+            }
+        }
+
+        h1 {
+            color: #fff;
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 80px;
+        }
     }
 }

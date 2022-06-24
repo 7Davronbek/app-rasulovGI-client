@@ -9,7 +9,7 @@ const CatalogHeader = () => {
                     <div className="row">
                         <div className="col-12">
                             <h1>Каталог</h1>
-                            <Link to='/'>Главная</Link> <span className="my-2">/</span> <a href="#!">Каталог</a>
+                            <Link to='/'>Главная</Link> <span className="my-2">/</span> <a className='actives'  href="#!">Каталог</a>
                         </div>
                     </div>
                 </div>
