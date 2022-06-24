@@ -1,38 +1,88 @@
 import React from 'react'
-import AwesomeSlider from 'react-awesome-slider';
-// import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
-// import AwesomeSliderStyles from 'react-awesome-slider/src/styles';
-import CoreStyles from 'react-awesome-slider/src/core/styles.scss';
-import AnimationStyles from 'react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss';
-import withAutoplay from 'react-awesome-slider/dist/autoplay';
-import 'react-awesome-slider/dist/styles.css';
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const AutoplaySlider = withAutoplay(AwesomeSlider);
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+
+// import required modules
+import { EffectFade, Navigation, Pagination } from "swiper";
 
 
 const Header = () => {
-  return (
-    <div className='Header'>
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
+    return (
+        <div className='Header'>
 
-            <AutoplaySlider
-              play={true}
-              animation="foldOutAnimation"
-              cssModule={[CoreStyles, AnimationStyles]}
-              cancelOnInteraction={false} // should stop playing on user interaction
-              interval={6000}>
-              <div data-src="/img/header.png" />
-              <div data-src="/img/header.png" />
-              <div data-src="/img/header.png" />
-            </AutoplaySlider>
+            <Swiper
+                spaceBetween={30}
+                effect={"fade"}
+                navigation={true}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[EffectFade, Navigation, Pagination]}
+                className="mySwiper"
+            >
+                <SwiperSlide>
+                    <img alt='Rasulov' src="/img/header.png" />
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12">
+                                <div className="cards">
+                                    <span className='bg'><img src="/img/bg.png" alt="" /></span>
+                                    <div className="cardsBody">
+                                        <h1>Orci nullam aliquet.</h1>
+                                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
+                                        <a href="#!">Orci nullam aliquet. <span><img src="/icon/arrowRight.svg" alt="" /></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img alt='Rasulov' src="/img/header.png" />
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12">
+                                <div className="cards">
+                                    <span className='bg'><img src="/img/bg.png" alt="" /></span>
+                                    <div className="cardsBody">
+                                        <h1>Orci nullam aliquet.</h1>
+                                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
+                                        <a href="#!">Orci nullam aliquet. <span><img src="/icon/arrowRight.svg" alt="" /></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img alt='Rasulov' src="/img/header.png" />
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12">
+                                <div className="cards">
+                                    <span className='bg'><img src="/img/bg.png" alt="" /></span>
+                                    <div className="cardsBody">
+                                        <h1>Orci nullam aliquet.</h1>
+                                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
+                                        <a href="#!">Orci nullam aliquet. <span><img src="/icon/arrowRight.svg" alt="" /></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
 
-          </div>
+            </Swiper>
+
+
         </div>
-      </div>
-    </div >
-  )
+    )
 }
 
 export default Header
