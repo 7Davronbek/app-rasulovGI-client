@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 
 // import required modules
-import { EffectFade, Navigation, Pagination } from "swiper";
+import { EffectFade, Pagination } from "swiper";
 
 
 const Header = () => {
@@ -19,11 +19,11 @@ const Header = () => {
             <Swiper
                 spaceBetween={30}
                 effect={"fade"}
-                navigation={true}
+                // navigation={true}
                 pagination={{
                     clickable: true,
                 }}
-                modules={[EffectFade, Navigation, Pagination]}
+                modules={[EffectFade,  Pagination]}
                 className="mySwiper"
             >
                 <SwiperSlide>
