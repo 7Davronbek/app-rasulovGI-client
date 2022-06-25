@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import Main from "./pages/Main";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Catalog from "./pages/Catalog";
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navbar />
 
         <Routes>

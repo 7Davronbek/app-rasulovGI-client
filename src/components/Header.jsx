@@ -55,8 +55,8 @@ const Header = () => {
                                     <span className='bg'><img src="/img/bg.png" alt="" /></span>
                                     <div className="cardsBody">
                                         <h1>Orci nullam aliquet.</h1>
-                                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
-                                        <a href="#!">Orci nullam aliquet. <span><img src="/icon/arrowRight.svg" alt="" /></span></a>
+                                        <h2>МЫ ЗАБОТИМСЯ О ВАС !</h2>
+                                        <Link to='/catalog'>Подробнее <span><img src="/icon/arrowRight.svg" alt="" /></span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -72,8 +72,8 @@ const Header = () => {
                                     <span className='bg'><img src="/img/bg.png" alt="" /></span>
                                     <div className="cardsBody">
                                         <h1>Orci nullam aliquet.</h1>
-                                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
-                                        <a href="#!">Orci nullam aliquet. <span><img src="/icon/arrowRight.svg" alt="" /></span></a>
+                                        <h2>Уют начинается с нас!</h2>
+                                        <Link to='/catalog'>Подробнее <span><img src="/icon/arrowRight.svg" alt="" /></span></Link>
                                     </div>
                                 </div>
                             </div>
