@@ -760,8 +760,8 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #ffffffe0;
-        backdrop-filter: blur(50px);
+        background: #fff;
+        // backdrop-filter: blur(50px);
         transition: all .5s ease-in-out;
         opacity: 0;
         visibility: hidden;
