@@ -23,21 +23,21 @@ const Number = () => {
                                 <div className="col-lg-6">
                                     <div className="cards mt-2">
                                         <h2>Мы изготовили дверей</h2>
-                                        <h3>301 567</h3>
+                                        <h3>451 366</h3>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-6">
                                     <div className="cards">
                                         <h2>Количество  клиентов</h2>
-                                        <h3>14 232</h3>
+                                        <h3>75 361</h3>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-6">
                                     <div className="cards">
                                         <h2>Наши специалисты</h2>
-                                        <h3>500</h3>
+                                        <h3>400</h3>
                                     </div>
                                 </div>
 
