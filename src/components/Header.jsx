@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 
 // import required modules
-import { EffectFade, Pagination, } from "swiper";
+import { Autoplay, EffectFade, Pagination, } from "swiper";
 import { Link } from 'react-router-dom';
 
 
@@ -26,7 +26,12 @@ const Header = () => {
                 pagination={{
                     clickable: true,
                 }}
-                modules={[EffectFade, Pagination]}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                loop={true}
+                modules={[EffectFade, Pagination, Autoplay]}
                 className="mySwiper"
             >
                 <SwiperSlide>
@@ -37,7 +42,7 @@ const Header = () => {
                                 <div className="cards">
                                     <span className='bg'><img src="/img/bg.png" alt="" /></span>
                                     <div className="cardsBody">
-                                        <h1>Orci nullam aliquet.</h1>
+                                        <h1>Rasulov Gi</h1>
                                         <h2>ОТКРОЙ ДВЕРЬ В НОВУЮ ЖИЗНЬ !</h2>
                                         <Link to='/catalog'>Подробнее <span><img src="/icon/arrowRight.svg" alt="" /></span></Link>
                                     </div>
@@ -54,7 +59,7 @@ const Header = () => {
                                 <div className="cards">
                                     <span className='bg'><img src="/img/bg.png" alt="" /></span>
                                     <div className="cardsBody">
-                                        <h1>Orci nullam aliquet.</h1>
+                                        <h1>Rasulov Gi</h1>
                                         <h2>МЫ ЗАБОТИМСЯ О ВАС !</h2>
                                         <Link to='/catalog'>Подробнее <span><img src="/icon/arrowRight.svg" alt="" /></span></Link>
                                     </div>
@@ -71,7 +76,7 @@ const Header = () => {
                                 <div className="cards">
                                     <span className='bg'><img src="/img/bg.png" alt="" /></span>
                                     <div className="cardsBody">
-                                        <h1>Orci nullam aliquet.</h1>
+                                        <h1>Rasulov Gi</h1>
                                         <h2>Уют начинается с нас!</h2>
                                         <Link to='/catalog'>Подробнее <span><img src="/icon/arrowRight.svg" alt="" /></span></Link>
                                     </div>

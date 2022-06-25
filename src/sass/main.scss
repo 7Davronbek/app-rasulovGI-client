@@ -60,6 +60,55 @@ body {
             top: 19%;
         }
 
+        .swiper-slide {
+
+            .cards {
+                opacity: 0;
+                transition: all .3s ease-in-out;
+                overflow: hidden;
+
+                h1 {
+                    transition: all .4s ease-in-out .1s;
+                    transform: translateX(-50px);
+                    opacity: 0;
+                }
+
+                h2 {
+                    transition: all .5s ease-in-out .3s;
+                    transform: translateX(-150px);
+                    opacity: 0;
+                }
+
+                a {
+                    transition: all .5s ease-in-out .5s;
+                    transform: translateX(-50px);
+                    opacity: 0;
+                }
+            }
+
+            &.swiper-slide-active {
+
+                .cards {
+                    opacity: 1;
+
+                    h1 {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+
+                    h2 {
+                        transform: translateX(-0);
+                        opacity: 1;
+                    }
+
+                    a {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
         .swiper-pagination {
             background-color: transparent;
             display: flex;
