@@ -18,7 +18,7 @@ const Navbar = () => {
                                 <a href="/"><img className='w-100' src="./img/logo.png" alt="" /></a>
                             </div>
                         </div>
-                        <div className="col-8 d-flex align-items-center justify-content-between">
+                        <div className="col-8 myCol d-flex align-items-center justify-content-between">
                             <ul className="nav-menu">
                                 <li className='me-5'><a href="/">{getText("about")}</a></li>
                                 <li className='me-5'><Link to="/catalog">{getText("products")}</Link></li>

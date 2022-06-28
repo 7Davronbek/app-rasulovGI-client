@@ -259,6 +259,42 @@ body {
                 outline: none;
             }
         }
+
+        .myCol {
+            display: flex;
+
+            .nav-menu {
+
+                li {
+
+                    @media(max-width: 992px) {
+                        margin-right: 0 !important;
+                        margin-top: 40px;
+                    }
+                }
+
+                @media(max-width: 992px) {
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+
+            @media(max-width: 992px) {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #ffffffba;
+                backdrop-filter: blur(15px);
+                width: 100%;
+                z-index: 9999;
+                height: 100vh;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center !important;
+            }
+        }
     }
 
     .About {
