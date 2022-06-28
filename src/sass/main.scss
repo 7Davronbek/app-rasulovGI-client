@@ -600,12 +600,16 @@ body {
         }
     }
 
-    .youTube {
+    .YouTube {
         padding-bottom: 110px;
 
         iframe {
             width: 100%;
             height: 655px;
+
+            @media(max-width: 992px) {
+                height: 500px;
+            }
         }
     }
 

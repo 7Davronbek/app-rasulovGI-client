@@ -2,7 +2,7 @@ import React from 'react'
 
 const YouTube = () => {
     return (
-        <div className='youTube'>
+        <div className='YouTube'>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
