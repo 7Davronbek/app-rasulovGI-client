@@ -35,7 +35,7 @@ const Header = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <img alt='Rasulov' src="/img/header.png" />
+                    <img alt='Rasulov' src="/img/header2.png" />
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
@@ -52,7 +52,7 @@ const Header = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img alt='Rasulov' src="/img/header.png" />
+                    <img alt='Rasulov' src="/img/header2.png" />
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
@@ -69,7 +69,7 @@ const Header = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img alt='Rasulov' src="/img/header.png" />
+                    <img alt='Rasulov' src="/img/header2.png" />
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
