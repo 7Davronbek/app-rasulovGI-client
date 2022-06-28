@@ -10,7 +10,7 @@ import CatalogByIds from "./pages/CatalogByIds";
 const App = () => {
   useEffect(() => {
     setTimeout(() => {
-      console.clear();
+      // console.clear();
       console.log("Instagram: @duvronbekmaxmudov");
     }, 2000);
   }, []);

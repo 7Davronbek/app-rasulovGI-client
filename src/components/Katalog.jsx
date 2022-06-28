@@ -20,9 +20,20 @@ const Katalog = () => {
                     <div className="col-12">
                         <Swiper
                             slidesPerView={3}
-                            spaceBetween={30}
                             pagination={{
                                 clickable: true,
+                            }}
+                            breakpoints={{
+                                0: {
+                                    slidesPerView: 1.3,
+                                    spaceBetween: 15,
+                                },
+                                768: {
+                                    slidesPerView: 2.2,
+                                },
+                                992: {
+                                    slidesPerView: 3,
+                                },
                             }}
                             modules={[Pagination]}
                             className="mySwiper"
