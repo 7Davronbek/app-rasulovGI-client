@@ -611,6 +611,10 @@ body {
                 height: 500px;
             }
         }
+
+        @media(max-width: 992px) {
+            padding-bottom: 60px;
+        }
     }
 
     .footer {
@@ -624,6 +628,10 @@ body {
 
         .myRow {
             margin: 90px 0 60px;
+
+            @media(max-width: 992px) {
+                margin: 40px 0 50px;
+            }
         }
 
         .socials {
@@ -649,6 +657,17 @@ body {
                 color: #FFFFFF;
                 margin-top: 5px;
                 padding-left: 12px;
+
+                @media(max-width: 992px) {
+                    padding-left: 20px;
+                }
+            }
+
+            @media(max-width: 992px) {
+                justify-content: initial !important;
+                margin-bottom: 30px;
+                width: 100%;
+                padding: 0 30px;
             }
         }
 
@@ -662,6 +681,8 @@ body {
 
         .zed {
             z-index: 99;
+
+
         }
 
         .blur {
@@ -671,6 +692,10 @@ body {
             right: 0;
             bottom: 0;
             background-color: rgba(0, 0, 0, 0.73);
+        }
+
+        @media(max-width: 992px) {
+            padding: 80px 0 50px;
         }
     }
 

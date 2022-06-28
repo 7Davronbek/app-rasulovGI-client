@@ -12,7 +12,7 @@ const Footer = () => {
 
                 <div className="row myRow justify-content-between">
 
-                    <div className="col-3 zed">
+                    <div className="col-lg-3 zed">
                         <div className="cards">
                             <div><img src="/icon/phone.svg" alt="" /></div>
                             <div>
@@ -22,7 +22,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="col-3 zed ">
+                    <div className="col-lg-3 zed ">
                         <div className="cards justify-content-center">
                             <div><img src="/icon/world.svg" alt="" /></div>
                             <div>
@@ -32,7 +32,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="col-3 zed">
+                    <div className="col-lg-3 zed">
                         <div className="cards">
                             <div><img src="/icon/location.svg" alt="" /></div>
                             <div>
