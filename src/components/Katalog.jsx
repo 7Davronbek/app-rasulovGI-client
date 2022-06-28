@@ -25,7 +25,7 @@ const Katalog = () => {
                             }}
                             breakpoints={{
                                 0: {
-                                    slidesPerView: 1.3,
+                                    slidesPerView: 1.2,
                                     spaceBetween: 15,
                                 },
                                 768: {
