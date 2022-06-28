@@ -1,9 +1,11 @@
 import React from 'react'
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getLanguage, getText } from '../locales/index'
 import { LANGUAGE } from '../tools/constants';
 
 const Navbar = () => {
+    const [burger, setBurger] = useState(false)
     const changeLanguage = (e) => {
         localStorage.setItem(LANGUAGE, e.target.value)
         document.location.reload(true)
@@ -13,12 +15,18 @@ const Navbar = () => {
             <div className='Navbar'>
                 <div className="container">
                     <div className="row justify-content-between align-items-center">
-                        <div className="col-2">
+                        <div className="col-lg-2 col-6">
                             <div className="logo">
                                 <a href="/"><img className='w-100' src="./img/logo.png" alt="" /></a>
                             </div>
                         </div>
-                        <div className="col-8 myCol d-flex align-items-center justify-content-between">
+
+                        <div onClick={() => setBurger(!burger)} className={`burger ${burger ? 'active' : ''}`} id="burger">
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                        <div className={`col-8 myCol d-flex align-items-center justify-content-between ${burger ? 'active' : ''}`}>
                             <ul className="nav-menu">
                                 <li className='me-5'><a href="/">{getText("about")}</a></li>
                                 <li className='me-5'><Link to="/catalog">{getText("products")}</Link></li>
