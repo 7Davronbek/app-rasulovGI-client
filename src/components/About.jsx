@@ -8,7 +8,7 @@ const About = () => {
             <div className="key2"><img src="/img/key2.png" alt="" /></div>
             <div className="container">
                 <div className="row">
-                    <div className="col-7">
+                    <div className="col-lg-7">
                         <div className="info">
                             <div className="main-title">
                                 <h2>{getText("about")}</h2>
@@ -27,7 +27,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-5">
+                    <div className="col-lg-5">
                         <img src="./img/about.png" alt="" />
                     </div>
                 </div>
