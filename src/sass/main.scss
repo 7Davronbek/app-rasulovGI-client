@@ -526,6 +526,13 @@ body {
             line-height: 30px;
             color: #AA240A;
 
+            &.secondary {
+
+                @media(max-width: 992px) {
+                    margin-top: 50px !important;
+                }
+            }
+
             @media(max-width: 992px) {
                 text-align: center;
                 font-size: 32px;

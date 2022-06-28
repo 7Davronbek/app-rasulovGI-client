@@ -49,7 +49,7 @@ const Number = () => {
 
                     <div className="row">
                         <div className="col-lg-4">
-                            <h1 className='mt-4'>О производстве товара</h1>
+                            <h1 className='mt-4 secondary' >О производстве товара</h1>
                         </div>
                         <div className="col-lg-8">
                             <div className="row mt-5">
