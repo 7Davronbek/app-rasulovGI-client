@@ -88,7 +88,7 @@ const Number = () => {
                 </div>
             </div>
 
-            
+
         </>
     )
 }
