@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -14,17 +13,6 @@ import { Link } from 'react-router-dom';
 
 
 const Header = () => {
-    const [width, setWidth] = useState(false)
-
-    useEffect(() => {
-        if (window.innerWidth <= 767) {
-            setWidth(false)
-        }
-        else {
-            setWidth(true)
-        }
-    }, [width])
-    console.log(width);
 
     return (
         <div className='Header'>
@@ -44,8 +32,8 @@ const Header = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    {!width ? <img alt='Rasulov' src={`/img/header2.png`} /> : <img alt='Rasulov' src={`/img/header.png`} />}
-                    {/* <img alt='Rasulov' src={`/img/header${width ? '2' : '1'}.png`} /> */}
+                    <img className="mobileImg" alt='Rasulov' src="/img/header2.png" />
+                    <img className="webImg" alt='Rasulov' src="/img/header.png" />
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
@@ -62,8 +50,8 @@ const Header = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    {!width ? <img alt='Rasulov' src={`/img/header2.png`} /> : <img alt='Rasulov' src={`/img/header.png`} />}
-                    {/* <img alt='Rasulov' src="/img/header2.png" /> */}
+                    <img className="mobileImg" alt='Rasulov' src="/img/header2.png" />
+                    <img className="webImg" alt='Rasulov' src="/img/header.png" />
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
@@ -80,8 +68,8 @@ const Header = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    {!width ? <img alt='Rasulov' src={`/img/header2.png`} /> : <img alt='Rasulov' src={`/img/header2.png`} />}
-                    {/* <img alt='Rasulov' src="/img/header2.png" /> */}
+                    <img className="mobileImg" alt='Rasulov' src="/img/header2.png" />
+                    <img className="webImg" alt='Rasulov' src="/img/header.png" />
                     <div className="container">
                         <div className="row">
                             <div className="col-12">

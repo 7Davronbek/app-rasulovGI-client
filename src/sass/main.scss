@@ -56,6 +56,22 @@ body {
         position: relative;
         height: 800px;
 
+        .mobileImg {
+            display: none;
+
+            @media(max-width: 767px) {
+                display: block;
+            }
+        }
+
+        .webImg {
+            display: block;
+
+            @media(max-width: 767px) {
+                display: none;
+            }
+        }
+
         .col-12 {
             position: absolute;
             top: 12%;
@@ -207,7 +223,11 @@ body {
                     align-items: center;
                     font-size: 17px;
                     font-weight: 600;
-                    color: #ffffff;
+                    color: #000;
+
+                    @media(max-width: 767px) {
+                        color: #fff;
+                    }
 
                     span {
                         margin-left: 12px;
