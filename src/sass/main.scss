@@ -51,6 +51,13 @@ body {
         padding: 0 !important;
     }
 
+    .navbarLine {
+
+        @media(max-width: 992px) {
+            padding-top: 107px;
+        }
+    }
+
     .Header {
         padding-bottom: 40px;
         position: relative;
@@ -312,6 +319,7 @@ body {
     .Navbar {
         padding: 20px 0;
         user-select: none;
+        transition: all .5s ease-in-out;
 
         .nav-menu {
             display: flex;
@@ -368,8 +376,7 @@ body {
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background: #ffffffba;
-                backdrop-filter: blur(15px);
+                background: #ffffff;
                 width: 100%;
                 z-index: 9999;
                 height: 100vh;
@@ -379,6 +386,21 @@ body {
                 opacity: 0;
                 transform: translateX(100%);
             }
+        }
+
+        &.active {
+            padding: 13px 0;
+            box-shadow: 0 0 10px silver;
+        }
+
+        @media(max-width: 992px) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #ffffffa3;
+            backdrop-filter: blur(25px);
+            z-index: 9999;
         }
     }
 
@@ -1251,6 +1273,10 @@ body {
         &.active {
             opacity: 1;
             visibility: visible;
+        }
+
+        @media(max-width: 992px) {
+            display: none;
         }
     }
 

@@ -10,9 +10,23 @@ const Navbar = () => {
         localStorage.setItem(LANGUAGE, e.target.value)
         document.location.reload(true)
     }
+
+    const [navbar, setNavbar] = useState(false);
+
+
+    const changeNavbar = () => {
+        if (window.scrollY >= 50) {
+            setNavbar(true);
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeNavbar);
+
     return (
         <>
-            <div className='Navbar'>
+            <div className={`Navbar ${navbar ? 'active' : ''}`}>
                 <div className="container">
                     <div className="row justify-content-between align-items-center">
                         <div className="col-lg-2 col-6">
@@ -29,7 +43,7 @@ const Navbar = () => {
                         <div className={`col-8 myCol d-flex align-items-center justify-content-between ${burger ? 'active' : ''}`}>
                             <ul className="nav-menu">
                                 <li className='me-5'><a href="/">{getText("about")}</a></li>
-                                <li  onClick={() => setBurger(false)} className='me-5'><Link to="/catalog">{getText("products")}</Link></li>
+                                <li onClick={() => setBurger(false)} className='me-5'><Link to="/catalog">{getText("products")}</Link></li>
                                 <li className='me-5'><a href="/">{getText("contacts")}</a></li>
                                 <li className='me-5'><a href="/">{getText("portfolio")}</a></li>
                             </ul>
