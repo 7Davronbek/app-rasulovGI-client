@@ -835,6 +835,12 @@ body {
             line-height: 30px;
             color: #fff;
 
+            @media(max-width: 767px) {
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+            }
+
             &.actives {
                 color: #F68E28;
             }
@@ -845,6 +851,11 @@ body {
             font-weight: 500;
             font-size: 64px;
             line-height: 80px;
+
+            @media(max-width: 767px) {
+                font-size: 30px;
+                line-height: 38px;
+            }
         }
     }
 
@@ -852,6 +863,13 @@ body {
     .CatalogById {
         padding: 80px 0;
         position: relative;
+
+        .cardsLeft {
+
+            @media(max-width: 992px) {
+                margin-bottom: 35px;
+            }
+        }
 
         .key1,
         .key2,
@@ -887,6 +905,11 @@ body {
         .col-lg-6 {
             &.actives {
                 margin-top: 60px;
+
+
+                @media(max-width: 992px) {
+                    margin: 0 !important;
+                }
             }
         }
 
@@ -1009,6 +1032,68 @@ body {
         }
     }
 
+    .CatalogContent {
+
+        .cards {
+
+            h2 {
+
+                @media(max-width: 1200px) {
+                    font-size: 40px;
+                }
+
+                @media(max-width: 992px) {
+                    color: #222 !important;
+                    font-weight: 600;
+                    font-size: 30px;
+                    line-height: 90.5%;
+                }
+            }
+
+            a {
+
+                @media(max-width: 992px) {
+                    position: inherit;
+                    top: 0;
+                    margin-top: 10px;
+                    color: $colorRed;
+                    opacity: 1;
+                    transform: translate(0);
+                    visibility: visible;
+                }
+            }
+
+            p {
+
+                @media(max-width: 992px) {
+                    position: inherit;
+                    top: 0;
+                    margin-top: 10px;
+                    color: #000;
+                    opacity: 1;
+                    transform: translate(0);
+                    visibility: visible;
+                }
+            }
+
+            &::after {
+
+                @media(max-width: 992px) {
+                    display: none;
+                }
+            }
+
+            @media(max-width: 992px) {
+                height: auto;
+                margin-top: 30px;
+            }
+
+            @media(max-width: 992px) {
+                background: linear-gradient(0, #d9d9d9, transparent);
+            }
+        }
+    }
+
     .CatalogById {
 
         .cards {
@@ -1125,8 +1210,6 @@ body {
             visibility: visible;
         }
     }
-
-
 
     .koko {
         background: #000;
