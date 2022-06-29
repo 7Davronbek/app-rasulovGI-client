@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -14,11 +14,20 @@ import { Link } from 'react-router-dom';
 
 
 const Header = () => {
+    const [width, setWidth] = useState(false)
+
+    useEffect(() => {
+        if (window.innerWidth <= 767) {
+            setWidth(false)
+        }
+        else {
+            setWidth(true)
+        }
+    }, [width])
+    console.log(width);
+
     return (
         <div className='Header'>
-
-
-
             <Swiper
                 spaceBetween={30}
                 effect={"fade"}
@@ -35,7 +44,8 @@ const Header = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <img alt='Rasulov' src="/img/header2.png" />
+                    {!width ? <img alt='Rasulov' src={`/img/header2.png`} /> : <img alt='Rasulov' src={`/img/header.png`} />}
+                    {/* <img alt='Rasulov' src={`/img/header${width ? '2' : '1'}.png`} /> */}
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
@@ -52,7 +62,8 @@ const Header = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img alt='Rasulov' src="/img/header2.png" />
+                    {!width ? <img alt='Rasulov' src={`/img/header2.png`} /> : <img alt='Rasulov' src={`/img/header.png`} />}
+                    {/* <img alt='Rasulov' src="/img/header2.png" /> */}
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
@@ -69,7 +80,8 @@ const Header = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img alt='Rasulov' src="/img/header2.png" />
+                    {!width ? <img alt='Rasulov' src={`/img/header2.png`} /> : <img alt='Rasulov' src={`/img/header2.png`} />}
+                    {/* <img alt='Rasulov' src="/img/header2.png" /> */}
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
@@ -87,8 +99,6 @@ const Header = () => {
                 </SwiperSlide>
 
             </Swiper>
-
-
         </div>
     )
 }
