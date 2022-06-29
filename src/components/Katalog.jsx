@@ -30,9 +30,11 @@ const Katalog = () => {
                                 },
                                 768: {
                                     slidesPerView: 2.2,
+                                    spaceBetween: 25,
                                 },
                                 992: {
                                     slidesPerView: 3,
+                                    spaceBetween: 30,
                                 },
                             }}
                             modules={[Pagination]}

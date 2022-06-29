@@ -1125,4 +1125,21 @@ body {
             visibility: visible;
         }
     }
+
+
+
+    .koko {
+        background: #000;
+        text-align: center;
+        padding: 13px 0;
+
+        a {
+            color: #fff;
+            font-size: 14px;
+
+            span {
+                color: $colorYellow;
+            }
+        }
+    }
 }
