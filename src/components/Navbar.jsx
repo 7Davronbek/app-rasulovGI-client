@@ -42,10 +42,10 @@ const Navbar = () => {
 
                         <div className={`col-8 myCol d-flex align-items-center justify-content-between ${burger ? 'active' : ''}`}>
                             <ul className="nav-menu">
-                                <li className='me-5'><a href="/">{getText("about")}</a></li>
+                                <li  onClick={() => setBurger(false)} className='me-5'><Link to="/">{getText("about")}</Link></li>
                                 <li onClick={() => setBurger(false)} className='me-5'><Link to="/catalog">{getText("products")}</Link></li>
-                                <li className='me-5'><a href="/">{getText("contacts")}</a></li>
-                                <li className='me-5'><a href="/">{getText("portfolio")}</a></li>
+                                <li  onClick={() => setBurger(false)} className='me-5'><a href="/">{getText("contacts")}</a></li>
+                                <li  onClick={() => setBurger(false)} className='me-5'><a href="/">{getText("portfolio")}</a></li>
                             </ul>
 
                             <div className="language">
