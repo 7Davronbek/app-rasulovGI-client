@@ -21,6 +21,7 @@ const Navbar = () => {
             setNavbar(false)
         }
     }
+    
 
     window.addEventListener('scroll', changeNavbar);
 
@@ -54,7 +55,7 @@ const Navbar = () => {
                                     <option value="uz" selected={getLanguage() === "uz"} >Uz</option>
                                 </select>
                             </div>
- 
+
                         </div>
                     </div>
                 </div>
