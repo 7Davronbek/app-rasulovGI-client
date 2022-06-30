@@ -46,7 +46,7 @@ const Navbar = () => {
                                 <li onClick={() => setBurger(false)} className='me-5'><Link to="/">{getText("about")}</Link></li>
                                 <li onClick={() => setBurger(false)} className='me-5'><Link to="/catalog">{getText("products")}</Link></li>
                                 <li onClick={() => setBurger(false)} className='me-5'><a href="/">{getText("contacts")}</a></li>
-                                <li onClick={() => setBurger(false)} className='me-5'><a href="/">{getText("portfolio")}</a></li>
+                                <li onClick={() => setBurger(false)} className='me-5'><Link to="/gallery">{getText("portfolio")}</Link></li>
                             </ul>
 
                             <div className="language">
