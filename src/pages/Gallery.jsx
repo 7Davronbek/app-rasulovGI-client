@@ -4,7 +4,7 @@ import Galleries from '../components/Galleries'
 const Gallery = () => {
   return (
     <>
-    <Galleries />
+      <Galleries />
     </>
   )
 }
