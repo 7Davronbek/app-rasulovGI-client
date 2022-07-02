@@ -3,10 +3,10 @@ import React from 'react'
 const FixedPhone = () => {
   return (
     <>
-        <div className="FixedPhone">
+        <a href="tel: +998978777727"  className="FixedPhone">
             <div className="scales"></div>
-            <a href="tel: +998978777727"><img src="/icon/phone.png" alt="" /></a>
-        </div>
+            <span><img src="/icon/phone.png" alt="" /></span>
+        </a>
     </>
   )
 }

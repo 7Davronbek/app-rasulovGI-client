@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { getLanguage, getText } from '../locales/index'
 import { LANGUAGE } from '../tools/constants';
 
@@ -10,6 +10,8 @@ const Navbar = () => {
         localStorage.setItem(LANGUAGE, e.target.value)
         document.location.reload(true)
     }
+
+    const location = useLocation();
 
     const [navbar, setNavbar] = useState(false);
 
@@ -43,10 +45,10 @@ const Navbar = () => {
 
                         <div className={`col-10 myCol d-flex align-items-center justify-content-between ${burger ? 'active' : ''}`}>
                             <ul className="nav-menu">
-                                <li onClick={() => setBurger(false)} className='me-5'><Link to="/">{getText("about")}</Link></li>
-                                <li onClick={() => setBurger(false)} className='me-5'><Link to="/catalog">{getText("products")}</Link></li>
-                                <li onClick={() => setBurger(false)} className='me-5'><a href="/">{getText("contacts")}</a></li>
-                                <li onClick={() => setBurger(false)} className='me-5'><Link to="/gallery">{getText("portfolio")}</Link></li>
+                                <li onClick={() => setBurger(false)} className='me-5'><Link className={`${location.pathname === '/' ? 'active' : ''}`}  to="/">{getText("about")}</Link></li>
+                                <li onClick={() => setBurger(false)} className='me-5'><Link className={`${location.pathname === '/catalog' ? 'active' : ''}`} to="/catalog">{getText("products")}</Link></li>
+                                <li onClick={() => setBurger(false)} className='me-5'><a className={`${location.pathname === '/contacts' ? 'active' : ''}`} href="/">{getText("contacts")}</a></li>
+                                <li onClick={() => setBurger(false)} className='me-5'><Link className={`${location.pathname === '/gallery' ? 'active' : ''}`} to="/gallery">{getText("portfolio")}</Link></li>
                                 <li onClick={() => setBurger(false)} className='me-5 phone'><a href='tel: +998978777727'>+998 97 877 77 27</a></li>
                             </ul>
 

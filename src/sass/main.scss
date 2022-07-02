@@ -75,10 +75,9 @@ body {
     }
 
     .navbarLine {
+        padding-top: 107px;
 
-        @media(max-width: 992px) {
-            padding-top: 107px;
-        }
+        @media(max-width: 992px) {}
     }
 
     .Header {
@@ -344,11 +343,26 @@ body {
         padding: 20px 0;
         user-select: none;
         transition: all .5s ease-in-out;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #ffffffa3;
+        backdrop-filter: blur(25px);
+        z-index: 9999;
+
+        a {
+
+            &.active {
+                color: $colorRed !important;
+            }
+        }
 
         .nav-menu {
             display: flex;
             justify-content: space-between;
             width: 100%;
+            padding-left: 50px !important;
 
             li {
 
@@ -374,7 +388,9 @@ body {
                 }
             }
 
-            padding-left: 50px !important;
+            @media(max-width: 992px) {
+                padding-left: 0 !important;
+            }
         }
 
         select {
@@ -436,15 +452,7 @@ body {
             box-shadow: 0 0 10px silver;
         }
 
-        @media(max-width: 992px) {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: #ffffffa3;
-            backdrop-filter: blur(25px);
-            z-index: 9999;
-        }
+        @media(max-width: 992px) {}
     }
 
     .About {
@@ -1268,7 +1276,7 @@ body {
     }
 
     .Galleries2 {
-        background: #eee9e5;
+        background: #F5F5F5;
         padding: 50px 0;
     }
 
@@ -1288,8 +1296,8 @@ body {
 
     .FixedPhone {
         position: fixed;
-        bottom: 50px;
-        right: 50px;
+        bottom: 65px;
+        right: 60px;
         z-index: 999;
         background: $colorRed;
         width: 70px;
@@ -1312,14 +1320,25 @@ body {
 
         }
 
-        a {
+        span {
             -webkit-animation: shake 2s infinite 1s;
             animation: shake 2s infinite 1s;
             z-index: 999;
 
             img {
                 width: 35px;
+
+                @media(max-width: 767px) {
+                    width: 25px;
+                }
             }
+        }
+
+        @media(max-width: 767px) {
+            width: 50px;
+            height: 50px;
+            right: 30px;
+            bottom: 30px;
         }
 
         @keyframes shake {
