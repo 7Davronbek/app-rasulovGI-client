@@ -17,7 +17,7 @@ const Footer = () => {
                             <div className="cards">
                                 <div><img src="/icon/phone.svg" alt="" /></div>
                                 <div>
-                                    <a href="tel: +998978777727">+998 97 877 77 27</a>
+                                    <a href="tel: +998976777727">+998 97 677 77 27</a>
                                     {/* <a href="tel: +998943698058">+998(90) 123-45-67</a> */}
                                 </div>
                             </div>
@@ -27,7 +27,7 @@ const Footer = () => {
                             <div className="cards justify-content-center">
                                 <div><img src="/icon/world.svg" alt="" /></div>
                                 <div>
-                                    <a href="tel: +998 97 877 77 27">www.website.uz</a>
+                                    <a>www.website.uz</a>
                                     <a href="info@rasulov.uz">info@rasulov.uz</a>
                                 </div>
                             </div>
@@ -37,7 +37,7 @@ const Footer = () => {
                             <div className="cards">
                                 <div><img src="/icon/location.svg" alt="" /></div>
                                 <div>
-                                    <a href="tel: +998943698058">обл.Ташкент, Янгиюлский район, ул.Самаркандская</a>
+                                    <a>обл.Ташкент, Янгиюлский район, ул.Самаркандская</a>
                                     {/* <a href="tel: +998943698058">East Carolyne, DC 94879</a> */}
                                 </div>
                             </div>
