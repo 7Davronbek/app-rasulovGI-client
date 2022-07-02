@@ -285,12 +285,13 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        transform: translateX(-25px);
+        transform: translateX(-35px);
         z-index: 99999;
 
         div {
-            width: 30px;
-            height: 2px;
+            border-radius: 1px;
+            width: 49px;
+            height: 4px;
             background-color: $colorRed;
             transition: all .6s ease;
 
@@ -1222,6 +1223,20 @@ body {
         .margins {
             margin-top: 300px;
         }
+    }
+
+    .Galleries2 {
+        background: #eee9e5;
+        padding: 50px 0;
+    }
+
+    .fancybox__thumbs {
+        display: none;
+    }
+
+    .fancybox__progress {
+        color: $colorRed;
+        background-color: $colorRed;
     }
 
     .modals {
