@@ -1207,6 +1207,23 @@ body {
         }
     }
 
+    .Galleries {
+
+        .col-lg-4 {
+            height: 800px;
+            padding: 0 10px !important;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .margins {
+            margin-top: 300px;
+        }
+    }
+
     .modals {
         position: fixed;
         top: 0;
