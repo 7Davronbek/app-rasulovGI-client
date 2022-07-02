@@ -12,6 +12,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       // console.clear();
+      console.log("Instagram: @duvronbekmaxmudov");
     }, 2000);
   }, []);
   return (

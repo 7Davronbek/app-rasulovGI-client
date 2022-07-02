@@ -9,6 +9,29 @@ $colorOq: #fff;
     overflow-x: hidden;
 }
 
+html {
+    ::selection {
+        background-color: $colorRed;
+        color: #fff;
+    }
+
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #e5e5e5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $colorRed;
+        border-radius: 5px;
+    }
+}
+
 body {
     font-family: 'Gothic A1', sans-serif;
     overflow-x: hidden;
@@ -1232,6 +1255,11 @@ body {
 
     .fancybox__thumbs {
         display: none;
+    }
+
+    .fancybox__carousel {
+        background: #34343438;
+        backdrop-filter: blur(20px);
     }
 
     .fancybox__progress {
