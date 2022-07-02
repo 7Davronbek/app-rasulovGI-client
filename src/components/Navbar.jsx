@@ -32,7 +32,7 @@ const Navbar = () => {
                     <div className="row justify-content-between align-items-center">
                         <div className="col-lg-2 col-6">
                             <div className="logo">
-                                <a href="/"><img className='w-100' src="./img/logo.png" alt="" /></a>
+                                <Link to="/"><img className='w-100' src="./img/logo.png" alt="" /></Link>
                             </div>
                         </div>
 
@@ -41,13 +41,13 @@ const Navbar = () => {
                             <div></div>
                         </div>
 
-                        <div className={`col-8 myCol d-flex align-items-center justify-content-between ${burger ? 'active' : ''}`}>
+                        <div className={`col-10 myCol d-flex align-items-center justify-content-between ${burger ? 'active' : ''}`}>
                             <ul className="nav-menu">
                                 <li onClick={() => setBurger(false)} className='me-5'><Link to="/">{getText("about")}</Link></li>
                                 <li onClick={() => setBurger(false)} className='me-5'><Link to="/catalog">{getText("products")}</Link></li>
                                 <li onClick={() => setBurger(false)} className='me-5'><a href="/">{getText("contacts")}</a></li>
                                 <li onClick={() => setBurger(false)} className='me-5'><Link to="/gallery">{getText("portfolio")}</Link></li>
-                                {/* <li onClick={() => setBurger(false)} className='me-5'><a href='tel: +998978777727'>Связаться с нами</a></li> */}
+                                <li onClick={() => setBurger(false)} className='me-5 phone'><a href='tel: +998978777727'>+998 97 877 77 27</a></li>
                             </ul>
 
                             <div className="language">

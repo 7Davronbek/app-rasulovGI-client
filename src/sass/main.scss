@@ -348,6 +348,23 @@ body {
         .nav-menu {
             display: flex;
             justify-content: space-between;
+            width: 100%;
+
+            li {
+
+                @media(max-width: 1200px) {
+                    margin-right: 10px !important;
+                }
+            }
+
+            .phone {
+
+                a {
+                    color: $colorRed;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+            }
 
             li {
                 a {
@@ -356,6 +373,8 @@ body {
                     line-height: 30px;
                 }
             }
+
+            padding-left: 50px !important;
         }
 
         select {
