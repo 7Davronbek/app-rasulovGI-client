@@ -7,6 +7,7 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Catalog from "./pages/Catalog";
 import CatalogByIds from "./pages/CatalogByIds";
 import Gallery from "./pages/Gallery";
+import FixedPhone from "./components/FixedPhone";
 
 const App = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const App = () => {
       <Router>
         <ScrollToTop />
         <Navbar />
+        <FixedPhone />
 
         <Routes>
           <Route path="/" element={<Main />} />

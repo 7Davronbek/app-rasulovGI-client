@@ -1286,6 +1286,102 @@ body {
         background-color: $colorRed;
     }
 
+    .FixedPhone {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        z-index: 999;
+        background: $colorRed;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        .scales {
+            border-radius: 50%;
+            position: absolute;
+            background: #aa250ac0;
+            -webkit-animation: scales1 3s infinite 0s;
+            animation: scales1 3s infinite 0s;
+            z-index: 10000;
+            width: 50px;
+            height: 50px;
+            z-index: 99;
+
+        }
+
+        a {
+            -webkit-animation: shake 2s infinite 1s;
+            animation: shake 2s infinite 1s;
+            z-index: 999;
+
+            img {
+                width: 35px;
+            }
+        }
+
+        @keyframes shake {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            10% {
+                -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+            }
+
+            15% {
+                -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+            }
+
+            20% {
+                -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+            }
+
+            50% {
+                -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+            }
+
+            55% {
+                -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+            }
+
+            60% {
+                -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+            }
+
+            65% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes scales1 {
+            0% {
+                padding: 50%;
+                opacity: 1;
+            }
+
+            100% {
+                padding: 85%;
+                opacity: 0;
+            }
+        }
+    }
+
     .modals {
         position: fixed;
         top: 0;
