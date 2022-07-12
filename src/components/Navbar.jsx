@@ -47,7 +47,7 @@ const Navbar = () => {
                             <ul className="nav-menu">
                                 <li onClick={() => setBurger(false)} className='me-5'><Link className={`${location.pathname === '/' ? 'active' : ''}`} to="/">{getText("about")}</Link></li>
                                 <li onClick={() => setBurger(false)} className='me-5'><Link className={`${location.pathname === '/catalog' ? 'active' : ''}`} to="/catalog">{getText("products")}</Link></li>
-                                <li onClick={() => setBurger(false)} className='me-5'><a className={`${location.pathname === '/contacts' ? 'active' : ''}`} href="/">{getText("contacts")}</a></li>
+                                <li onClick={() => setBurger(false)} className='me-5'><Link to='/contacts' className={`${location.pathname === '/contacts' ? 'active' : ''}`}>{getText("contacts")}</Link></li>
                                 <li onClick={() => setBurger(false)} className='me-5'><Link className={`${location.pathname === '/gallery' ? 'active' : ''}`} to="/gallery">{getText("portfolio")}</Link></li>
                                 <li onClick={() => setBurger(false)} className='me-5 phone'><a href='tel: +998976777727'>+998 97 677 77 27</a></li>
                             </ul>

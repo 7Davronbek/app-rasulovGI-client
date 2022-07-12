@@ -8,6 +8,7 @@ import Catalog from "./pages/Catalog";
 import CatalogByIds from "./pages/CatalogByIds";
 import Gallery from "./pages/Gallery";
 import FixedPhone from "./components/FixedPhone";
+import Contacts from "./pages/Contacts";
 
 const App = () => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/" element={<Main />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/catalog/by-id" element={<CatalogByIds />} />
+          <Route path="/contacts" element={<Contacts />} />
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
 

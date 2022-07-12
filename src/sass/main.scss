@@ -339,6 +339,20 @@ body {
         }
     }
 
+    .Contacts {
+
+        .modals {
+            position: relative;
+            z-index: 1;
+            height: auto;
+            padding: 80px 0;
+
+            .close {
+                display: none;
+            }
+        }
+    }
+
     .Navbar {
         padding: 20px 0;
         user-select: none;
