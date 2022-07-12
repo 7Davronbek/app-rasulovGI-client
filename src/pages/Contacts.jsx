@@ -50,8 +50,8 @@ const Contacts = () => {
                                                 <input className='form-control' placeholder='Число дверей' onChange={e => setCount(e.target.value)} value={count} type="number" />
                                             </div>
                                         </div>
-                                        <div className="col-lg-6">
-                                            <textarea onChange={e => setMessage(e.target.value)} value={message} name="" cols="20" placeholder='Сообщение' className=' mb-0' ></textarea>
+                                            <div className="col-lg-6">
+                                                <textarea onChange={e => setMessage(e.target.value)} value={message} name="" cols="20" placeholder='Сообщение' className=' mb-0' ></textarea>
                                         </div>
                                         <div className="col-12">
                                             <button type='submit' className="btn">Отправить</button>

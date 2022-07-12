@@ -425,13 +425,51 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        background: #fff;
+        background: #66584a8a;
+        backdrop-filter: blur(20px);
         z-index: 999;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-    
+        transition: all .5s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+
+        .cards {
+            padding: 130px;
+            background: #fff;
+            border-radius: 20px;
+            transition: all .5s ease-in-out;
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(0);
+
+            h1 {
+                font-size: 40px;
+                font-weight: 600;
+
+                @media(max-width: 767px) {
+                    font-size: 30px;
+                }
+            }
+
+            @media(max-width: 767px) {
+                padding: 50px 80px;
+            }
+        }
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+
+            .cards {
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1);
+            }
+        }
+
     }
 
     .Navbar {
@@ -1513,6 +1551,46 @@ body {
         transition: all .5s ease-in-out;
         opacity: 0;
         visibility: hidden;
+
+
+        .myWrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            input {
+                width: 45%;
+
+                @media(max-width: 992px) {
+                    width: 100%;
+                }
+            }
+
+            select {
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid #F68E28;
+                color: #212529;
+                position: relative;
+                width: 45%;
+                padding-bottom: 8px;
+                outline: none;
+
+                option {
+                    background-color: #fff;
+                    color: #212529;
+                }
+
+                @media(max-width: 992px) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+
+            @media(max-width: 992px) {
+                flex-direction: column;
+            }
+        }
 
         .close {
             top: 19%;
