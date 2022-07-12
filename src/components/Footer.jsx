@@ -64,7 +64,7 @@ const Footer = () => {
             </div>
 
             <div className="koko">
-                <a target={'_blank'}  rel="noreferrer" href="https://kokoagency.uz/">© 2022 Rasulov GI by <span>kOkO Digital Agency</span> </a>
+                <a target={'_blank'} rel="noreferrer" href="https://kokoagency.uz/">© 2022 Rasulov GI by <span>kOkO Digital Agency</span> </a>
             </div>
         </>
     )

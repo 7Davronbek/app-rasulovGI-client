@@ -23,7 +23,7 @@ const Navbar = () => {
             setNavbar(false)
         }
     }
-    
+
 
     window.addEventListener('scroll', changeNavbar);
 
@@ -45,7 +45,7 @@ const Navbar = () => {
 
                         <div className={`col-10 myCol d-flex align-items-center justify-content-between ${burger ? 'active' : ''}`}>
                             <ul className="nav-menu">
-                                <li onClick={() => setBurger(false)} className='me-5'><Link className={`${location.pathname === '/' ? 'active' : ''}`}  to="/">{getText("about")}</Link></li>
+                                <li onClick={() => setBurger(false)} className='me-5'><Link className={`${location.pathname === '/' ? 'active' : ''}`} to="/">{getText("about")}</Link></li>
                                 <li onClick={() => setBurger(false)} className='me-5'><Link className={`${location.pathname === '/catalog' ? 'active' : ''}`} to="/catalog">{getText("products")}</Link></li>
                                 <li onClick={() => setBurger(false)} className='me-5'><a className={`${location.pathname === '/contacts' ? 'active' : ''}`} href="/">{getText("contacts")}</a></li>
                                 <li onClick={() => setBurger(false)} className='me-5'><Link className={`${location.pathname === '/gallery' ? 'active' : ''}`} to="/gallery">{getText("portfolio")}</Link></li>

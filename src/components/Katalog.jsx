@@ -41,16 +41,16 @@ const Katalog = () => {
                             className="mySwiper"
                         >
 
-                        <SwiperSlide>
-                            <div className="cards">
-                                <img src="/img/catalog/1.png" className='w-100' alt="" />
-                                <h2>Эксклюзивный класс</h2>
+                            <SwiperSlide>
+                                <div className="cards">
+                                    <img src="/img/catalog/1.png" className='w-100' alt="" />
+                                    <h2>Эксклюзивный класс</h2>
 
-                                <p>Эксклюзивом принято называть то, что доступно не каждому. Вы сделали или планируете сделать интерьер своего жилища выходящим за рамки усредненных требований и стандартов – элитным, престижным, дорогим? Тогда у вас обязательно должны быть установлены эксклюзивные межкомнатные двери.</p>
-                                <Link to='/catalog' >Ознакомиться с товаром <span><img src="/icon/arrowRight.svg" alt="" /></span></Link>
-                            </div>
-                        </SwiperSlide>
-                        
+                                    <p>Эксклюзивом принято называть то, что доступно не каждому. Вы сделали или планируете сделать интерьер своего жилища выходящим за рамки усредненных требований и стандартов – элитным, престижным, дорогим? Тогда у вас обязательно должны быть установлены эксклюзивные межкомнатные двери.</p>
+                                    <Link to='/catalog' >Ознакомиться с товаром <span><img src="/icon/arrowRight.svg" alt="" /></span></Link>
+                                </div>
+                            </SwiperSlide>
+
                             <SwiperSlide>
                                 <div className="cards">
                                     <img src="/img/catalog/4.png" className='w-100' alt="" />
