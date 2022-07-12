@@ -19,7 +19,13 @@ const Contacts = () => {
                                     </div>
                                     <div className="col-lg-6">
                                         <input type="text" placeholder='Имя' className='form-control' />
-                                        <input type="text" placeholder='Номер телефона' className='form-control mb-0' />
+                                        <input type="text" placeholder='Номер телефона' className='form-control ' />
+                                        <div className="myWrap">
+                                            <select name="type_flat">
+                                                <option value="Dom">Dom</option>
+                                                <option value="Kvartira">Kvartira</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div className="col-lg-6">
                                         <textarea name="" cols="20" placeholder='Сообщение' className=' mb-0' ></textarea>
